@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
 .rectangle {
     width: 200px;
     height: 100px;
     background-color: tomato;
+}
+
+.text-center {
+    text-align: center;
 }
