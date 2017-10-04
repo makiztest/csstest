@@ -29,24 +29,65 @@ small {
 
 .text-center {
     text-align: center;
+    margin: 30px 0 0 0;
 }
+
 
 /* shadow from right and bottom */
 /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+
 .shadow-radius-zero {
-    -webkit-box-shadow: 5px 5px 0 0 rgba(0,0,0,0.4);
-       -moz-box-shadow: 5px 5px 0 0 rgba(0,0,0,0.4);
-            box-shadow: 5px 5px 0 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.4);
 }
 
 .shadow-radius-5 {
-    -webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.4);
-       -moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.4);
-            box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
 .shadow-bottom {
-    -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.8);
-       -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.8);
-            box-shadow: 0 8px 6px -6px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.8);
+}
+
+
+/* fancy1 */
+
+.fancy1 {
+    position: relative;
+}
+
+.fancy1:before,
+.fancy1:after {
+    background-color: #777; 
+    position: absolute;
+    content: '';
+    top: 80%;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    max-width: 300px;
+    -webkit-box-shadow: 0 15px 10px #777;
+       -moz-box-shadow: 0 15px 10px #777;
+            box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+       -moz-transform: rotate(-3deg);
+         -o-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    z-index: -1;
+}
+
+.fancy1:after {
+    -webkit-transform: rotate(3deg);
+       -moz-transform: rotate(3deg);
+         -o-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+    right: 10px;
+    left: auto;
 }
